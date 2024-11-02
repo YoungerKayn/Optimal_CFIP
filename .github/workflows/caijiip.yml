@@ -29,12 +29,9 @@ jobs:
       run: python ${{ github.workspace }}/collect_ips.py
         
     - name: Commit and push changes
-      env:
-          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
       run: |
         git config --global user.email "gg858425673@gmail.com"
         git config --global user.name "YoungerKayn"
-        git config --global user.password "$GIT_TOKEN"
         if [ -n "$(git status --porcelain)" ]; then
           git add ip.txt
           git commit -m "Automatic update"
