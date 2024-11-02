@@ -1,14 +1,7 @@
 [ tianshipapa ](https://github.com/tianshipapa)和
 [ymyuuu](https://github.com/ymyuuu/BestDomain)
-
 https://github.com/jc-lw/youxuanyuming
 
-![image.png](https://rin.vcrr.us.kg/images/18b0be4bca205491b1aaf70983319fe504bef426.png)
-
-
-
-
-# cfipcaiji 原理和需要修改的地方
 
 - 每3小时自动抓取  https://ip.164746.xyz 的优选ip，形成ip.txt 
 - 还有js自动生成的https://cf.090227.xyz 
