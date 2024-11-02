@@ -32,7 +32,7 @@ jobs:
       run: |
         git config --global user.email "gg858425673@gmail.com"
         git config --global user.name "YoungerKayn"
-        git config --global user.password $GIT_TOKEN
+        git config --global user.password "$(GIT_TOKEN)"
         if [ -n "$(git status --porcelain)" ]; then
           git add ip.txt
           git commit -m "Automatic update"
