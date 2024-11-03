@@ -8,6 +8,12 @@ urls = ['https://ip.164746.xyz/ipTop10.html',
         'https://cf.090227.xyz'
         ]
 
+# 自定义优选IP
+DIY_list = ['172.67.161.104',
+            '104.21.90.210',
+            '104.18.20.69',
+            '104.18.21.69']
+
 # 正则表达式用于匹配IP地址
 ip_pattern = r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
 
@@ -17,6 +23,8 @@ if os.path.exists('ip.txt'):
 
 # 创建一个文件来存储IP地址
 with open('ip.txt', 'w') as file:
+    for ip in DIY_list:
+        file.write(ip + '\n')
     for url in urls:
         # 发送HTTP请求获取网页内容
         response = requests.get(url)
