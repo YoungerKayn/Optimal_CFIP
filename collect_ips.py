@@ -4,17 +4,14 @@ import re
 import os
 
 # 爬取开关
-get_ips = False
+get_ips = True
 # 目标URL列表
 urls = ['https://ip.164746.xyz/ipTop10.html', 
         'https://cf.090227.xyz'
         ]
 
 # 自定义优选IP
-custom_list = ['172.67.161.104',
-            '104.21.90.210',
-            '104.18.20.69',
-            '104.18.21.69']
+custom_list = []
 
 # 正则表达式用于匹配IP地址
 ip_pattern = r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
